@@ -19,7 +19,7 @@ module.exports = function(app) {
     // req.body is available since we're using the body-parser middleware
 var userResponse = req.body;
 // console.log(JSON.stringify(userResponse));
-var userScores = userResponse;
+var userScores = userResponse.scores;
 console.log(userScores);
 var totalDiff = 50;
 var bestMatch = friendsArray[0];
@@ -31,6 +31,8 @@ for (var i = 0; i < friendsArray.length; i++){
     for (var j = 0; j < userScores.length; j++){
         scoreDiff = scoreDiff + Math.abs(friendsArray[i].scores[j] - userScores[j])
     }
+    console.log(totalDiff);
+    console.log(scoreDiff);
     if (scoreDiff < totalDiff){
         totalDiff = scoreDiff;
         bestMatch = friendsArray[i];
@@ -38,8 +40,8 @@ for (var i = 0; i < friendsArray.length; i++){
 }
 res.json(bestMatch);
 console.log(bestMatch)
-// console.log(totalDiff);
-// console.log(scoreDiff);
+console.log(totalDiff);
+console.log(scoreDiff);
   });
 };
 
