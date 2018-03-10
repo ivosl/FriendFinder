@@ -1,59 +1,46 @@
-// ===============================================================================
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-// ===============================================================================
+//Working on some methodology approach and logic with Chetan and Abdi 
+//and learning a few things from Cheatan in the process
 
-var friendsData = require("../data/friends");
+//linking to our "data" sorurce from friends.js
+var friendsArray = require("../data/friends.js");
 
-
-// ===============================================================================
-// ROUTING
-// ===============================================================================
-
+//allows us to export it to server.js
 module.exports = function(app) {
-  // API GET Requests
-  // Below code handles when users "visit" a page.
-  // In each of the below cases when a user visits a link
-  // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-  // ---------------------------------------------------------------------------
+  // API GET Request
+  // Below code handles when users visits friends page and displays the stored objects there
 
   app.get("/api/friends", function(req, res) {
-    res.json(friendsData);
+    res.json(friendsArray);
   });
 
- 
-  // API POST Requests
+  // API POST Request
   // Below code handles when a user submits a form and thus submits data to the server.
-  // In each of the below cases, when a user submits form data (a JSON object)
-  // ...the JSON is pushed to the appropriate JavaScript array
-  // (ex. User fills out a reservation request... this data is then sent to the server...
-  // Then the server saves the data to the tableData array)
-  // ---------------------------------------------------------------------------
-
-  app.post("/api/friends", function(req, res) {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
+  app.post("/api/survey", function(req, res) {
     // req.body is available since we're using the body-parser middleware
-    if (tableData.length < 5) {
-      tableData.push(req.body);
-      res.json(true);
+var userResponse = req.body;
+// console.log(JSON.stringify(userResponse));
+var userScores = userResponse;
+console.log(userScores);
+var totalDiff = 50;
+var bestMatch = friendsArray[0];
+
+//Creating 2 for loops to go thru the friends in our friendsArray and compare their scores 
+//wih the user scores
+for (var i = 0; i < friendsArray.length; i++){
+    var scoreDiff = 0;
+    for (var j = 0; j < userScores.length; j++){
+        scoreDiff = scoreDiff + Math.abs(friendsArray[i].scores[j] - userScores[j])
     }
-    else {
-      waitListData.push(req.body);
-      res.json(false);
+    if (scoreDiff < totalDiff){
+        totalDiff = scoreDiff;
+        bestMatch = friendsArray[i];
     }
-  });
-
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
-
-  app.post("/api/clear", function() {
-    // Empty out the arrays of data
-    tableData = [];
-    waitListData = [];
-
-    console.log(tableData);
+}
+res.json(bestMatch);
+console.log(bestMatch)
+// console.log(totalDiff);
+// console.log(scoreDiff);
   });
 };
+
+  

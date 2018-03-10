@@ -7,8 +7,8 @@
 
 var friendsArray = [
     {
-        name:"Ivo",
-        photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        name:"Jerry",
+        photo:"https://en.wikipedia.org/wiki/Lion#/media/File:Lion_(Panthera_leo)_(30941994012).jpg",
         scores:[
             5,
             1,
@@ -20,6 +20,70 @@ var friendsArray = [
             5,
             4,
             1
+        ]
+    },
+    {
+        name:"Peter",
+        photo:"https://en.wikipedia.org/wiki/Fish#/media/File:Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
+        scores:[
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            2,
+            1,
+            2,
+            1
+          ]
+    },
+    {
+        name:"Mary",
+        photo:"https://en.wikipedia.org/wiki/Fish#/media/File:Pterois_volitans_Manado-e_edit.jpg",
+        scores:[
+            3,
+            4,
+            5,
+            3,
+            2,
+            4,
+            2,
+            2,
+            3,
+            2
+          ]
+    },
+    {
+        name:"James",
+        photo:"https://en.wikipedia.org/wiki/Fish#/media/File:Dunkleosteus_BW.jpg",
+        scores:[
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            4,
+            4,
+            4,
+            4
+          ]
+    },
+    {
+        name:"Sofia",
+        photo:"https://en.wikipedia.org/wiki/Giraffe#/media/File:Giraffe_Mikumi_National_Park.jpg",
+        scores:[
+            4,
+            5,
+            3,
+            1,
+            4,
+            5,
+            2,
+            3,
+            2,
+            1
           ]
     }
   ];
@@ -28,22 +92,6 @@ var friendsArray = [
   // Note how we export the array. This makes it accessible to other files using require.
   module.exports = friendsArray;
 
-  var friendsArray = [];
-
-  function createUser(newUser) {
-      var name = newUser.name;
-      var photo = newUser.photo;
-      var scores = 
-
-      function UserInfo(name, photo, scores) {
-          this.name = name;
-          this.photo = photo;
-          this.scores = scores;
-      }
-      var newUser = new userInfo(name, photo, scores);
-
-      if (compare scores.apply.)
-  }
 
  
   
