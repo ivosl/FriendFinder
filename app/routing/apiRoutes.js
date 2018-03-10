@@ -40,8 +40,8 @@ for (var i = 0; i < friendsArray.length; i++){
 }
 res.json(bestMatch);
 console.log(bestMatch)
-console.log(totalDiff);
-console.log(scoreDiff);
+// console.log(totalDiff);
+// console.log(scoreDiff);
   });
 };
 

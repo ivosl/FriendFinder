@@ -8,7 +8,7 @@
 var friendsArray = [
     {
         name:"Jerry",
-        photo:"https://en.wikipedia.org/wiki/Lion#/media/File:Lion_(Panthera_leo)_(30941994012).jpg",
+        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
         scores:[
             5,
             1,
@@ -24,7 +24,7 @@ var friendsArray = [
     },
     {
         name:"Peter",
-        photo:"https://en.wikipedia.org/wiki/Fish#/media/File:Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
+        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
         scores:[
             1,
             1,
@@ -40,7 +40,7 @@ var friendsArray = [
     },
     {
         name:"Mary",
-        photo:"https://en.wikipedia.org/wiki/Fish#/media/File:Pterois_volitans_Manado-e_edit.jpg",
+        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
         scores:[
             3,
             4,
@@ -56,7 +56,7 @@ var friendsArray = [
     },
     {
         name:"James",
-        photo:"https://en.wikipedia.org/wiki/Fish#/media/File:Dunkleosteus_BW.jpg",
+        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
         scores:[
             5,
             5,
@@ -72,7 +72,7 @@ var friendsArray = [
     },
     {
         name:"Sofia",
-        photo:"https://en.wikipedia.org/wiki/Giraffe#/media/File:Giraffe_Mikumi_National_Park.jpg",
+        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
         scores:[
             4,
             5,
