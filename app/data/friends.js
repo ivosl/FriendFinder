@@ -1,14 +1,11 @@
-// ===============================================================================
+
 // DATA
-// Below data will hold all of the waitlist tables.
-// Initially we just set it equal to a "dummy" customer.
-// But you could have it be an empty array as well.
-// ===============================================================================
+// Below data will hold all of the friends options.
 
 var friendsArray = [
     {
-        name:"Jerry",
-        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
+        name:"Prince Harry",
+        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Prince_Harry_at_the_2017_Invictus_Games_opening_ceremony.jpg/800px-Prince_Harry_at_the_2017_Invictus_Games_opening_ceremony.jpg",
         scores:[
             5,
             1,
@@ -23,8 +20,8 @@ var friendsArray = [
         ]
     },
     {
-        name:"Peter",
-        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
+        name:"Jim Carrey",
+        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Jim_Carrey_2008.jpg/800px-Jim_Carrey_2008.jpg",
         scores:[
             1,
             1,
@@ -39,8 +36,8 @@ var friendsArray = [
           ]
     },
     {
-        name:"Mary",
-        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
+        name:"Hillbilly",
+        photo:"https://img.memecdn.com/crazy-ass-hillbilly_o_7152439.jpg",
         scores:[
             3,
             4,
@@ -55,8 +52,8 @@ var friendsArray = [
           ]
     },
     {
-        name:"James",
-        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
+        name:"Miley Cyrus",
+        photo:"https://clearlens.org/wp-content/uploads/2017/07/miley-cyrus-23.png",
         scores:[
             5,
             5,
@@ -71,8 +68,8 @@ var friendsArray = [
           ]
     },
     {
-        name:"Sofia",
-        photo:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Georgia_Aquarium_-_Giant_Grouper_edit.jpg/800px-Georgia_Aquarium_-_Giant_Grouper_edit.jpg",
+        name:"Pamela Anderson",
+        photo:"https://metrouk2.files.wordpress.com/2018/03/pamela-anderson-cj-parker.jpg?w=620&h=738&crop=1",
         scores:[
             4,
             5,
